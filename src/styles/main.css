@@ -34,18 +34,18 @@
   padding-bottom: 20px;
 }
 
-.automobile-name {
+.automobile-model {
   font-size: 15px;
   letter-spacing: 2px;
 }
 
-.automobile-specialization {
+.automobile-year {
   margin-bottom: 2px;
   font-size: 13px;
   color: #c4c4c4;
 }
 
-.automobile-city {
+.automobile-location {
   margin-top: 1px;
   font-size: 13px;
   color: #c4c4c4;
@@ -77,8 +77,6 @@
 
 .arrow-left,
 .arrow-right {
-  /* position: relative;
-    top: -120px; */
   border: none;
   background: none;
   outline: none;
