@@ -33,7 +33,7 @@ const Main = () => {
           <img src={dots} alt="dots-bar" className="dots-bar" />
         </div>
         {automobiles.length === 0 ? ( // Add conditional rendering for empty automobiles array
-          <p className="no-doctors-message"><Link to="/add_automobile" className="link">Add a new doctor </Link></p> // Render the message
+          <p className="no-automobiles-message"><Link to="/add_automobile" className="link">Add a new automobile </Link></p> // Render the message
         ) : (
           <div className="automobiles-container" ref={automobilesContainerRef}>
             {automobiles.map((automobile) => (
