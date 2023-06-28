@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { useParams, Link } from 'react-router-dom';
 import SideBar from '../components/SideBar';
+import '../styles/automobileDetails.css';
 
 const AutomobileDetails = () => {
   const automobiles = useSelector((state) => state.automobiles);
