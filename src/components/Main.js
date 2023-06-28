@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
+import SideBar from './SideBar';
 import '../styles/main.css';
 import dots from '../assets/dots.png';
 import left from '../assets/arrow-left.png';
@@ -27,6 +28,7 @@ const Main = () => {
   };
   return (
     <div className="main-bar">
+      <SideBar />
       <div className="main">
         <h1 className="automobile-list-title">BROWSE AUTOMOBILES</h1>
         <p className="automobiles-list-subtitle">Select an automobile to see details or reserve</p>
