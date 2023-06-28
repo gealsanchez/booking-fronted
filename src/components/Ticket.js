@@ -50,7 +50,7 @@ Ticket.propTypes = {
   }).isRequired,
   automobile: PropTypes.shape({
     id: PropTypes.number.isRequired,
-    name: PropTypes.string.isRequired,
+    model: PropTypes.string.isRequired,
     photo: PropTypes.string.isRequired,
   }).isRequired,
   onDelete: PropTypes.func.isRequired,
