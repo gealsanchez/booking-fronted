@@ -41,12 +41,12 @@ const Main = () => {
               <div key={`${automobile.id}_${automobile.model}`} className="automobile-card">
                 <img className="automobile-image" src={automobile.photo} alt="automobile" />
                 <h2 className="automobile-name">
-                  Dr.
-                  {' '}
                   {automobile.model}
                 </h2>
                 <img src={dots} alt="dots-bar" className="dots-bar" />
                 <p className="automobile-year">
+                  Manyfac.D
+                  {' '}
                   {automobile.year}
                 </p>
                 <p className="automobile-location">
