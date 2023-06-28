@@ -37,7 +37,7 @@ const Addautomobile = () => {
       <p>{message}</p>
       <p className="add-automobile-title">Add an automobile</p>
       <div className="inputs">
-        <input className="name-automobile-input" type="text" placeholder="Model" value={name} onChange={(e) => setModel(e.target.value)} />
+        <input className="model-automobile-input" type="text" placeholder="Model" value={model} onChange={(e) => setModel(e.target.value)} />
         <input className="year-input" type="text" placeholder="prd-year" value={year} onChange={(e) => setYear(e.target.value)} />
         <input className="location-input" type="text" placeholder="City" value={location} onChange={(e) => setLocation(e.target.value)} />
         <input className="rate-input" type="text" placeholder="Charging rate $" value={rate} onChange={(e) => setRate(e.target.value)} />
