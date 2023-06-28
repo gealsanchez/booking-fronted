@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
+import '../styles/main.css';
 import dots from '../assets/dots.png';
 import left from '../assets/arrow-left.png';
 import right from '../assets/arrow-right.png';
