@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../images/logo.png';
+// import logo from '../images/logo.png';
 import '../styles/style.css';
 
 const SideBar = () => (
   <nav className="sidebar">
     <div className="sidebar-header">
-      <div className="sidebar-header-icon">
+      {/* <div className="sidebar-header-icon">
         <img className="logo" src={logo} alt="Our logo" />
-      </div>
+      </div> */}
     </div>
     <ul className="sidebar-list">
       <li className="sidebar-item">
