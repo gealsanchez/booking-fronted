@@ -7,12 +7,15 @@ import Main from './components/Main';
 import Body from './components/Body';
 import AutomobileDetails from './pages/AutomobileDetails';
 import AddAutomobile from './components/AddAutomobile';
+import { fetchTickets } from './redux/tickets';
+import Ticket from './components/Ticket';
 
 const App = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(fetchAutomobiles());
+    dispatch(fetchTickets());
   }, [dispatch]);
 
   return (
@@ -22,6 +25,7 @@ const App = () => {
         <Route path="/main" element={<Main />} />
         <Route path="/automobiles/:automobileId" element={<AutomobileDetails />} />
         <Route path="/add_automobile" element={<AddAutomobile />} />
+        <Route path="/tickets" element={<Ticket />} />
       </Routes>
     </div>
   );

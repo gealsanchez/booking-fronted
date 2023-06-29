@@ -21,7 +21,7 @@ const SideBar = () => (
         <Link to="/automobiles/delete" className="link">DELETE AUTOMOBILE</Link>
       </li>
       <li className="sidebar-item">
-        <Link to="/reserve" className="link">RESERVE</Link>
+        <Link to="/tickets" className="link">RESERVE</Link>
       </li>
     </ul>
     <Link to="/signin" className="link sign-out-side">Sign Out</Link>
