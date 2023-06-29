@@ -60,20 +60,20 @@ export const removeAutomobile = (payload) => ({
 
 // API
 export const fetchAutomobiles = createAsyncThunk(GET, async () => {
-  const response = await fetch('https://booking-ege3.onrender.com/api/v1/automobiles');
+  const response = await fetch('http://127.0.0.1:3000/api/v1/automobiles');
   const data = await response.json();
   return { data };
 });
 
 export const createAutomobile = createAsyncThunk(ADD, async (automobileData) => {
-  const response = await axios.post('https://booking-ege3.onrender.com/api/v1/automobiles', { automobile: automobileData });
+  const response = await axios.post('http://127.0.0.1:3000/api/v1/automobiles', { automobile: automobileData });
   const dispatch = useDispatch();
   dispatch(fetchAutomobiles());
   return response.data;
 });
 
 export const deleteAutomobile = createAsyncThunk(DELETE, async (id) => {
-  await axios.delete(`https://booking-ege3.onrender.com/api/v1/automobiles/${id}`);
+  await axios.delete(`https://127.0.0.1:3000/api/v1/automobiles/${id}`);
   return { id }; // Return the deleted automobile's id for updating the state
 });
 

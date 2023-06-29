@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const SignUpComponent = () => {
   const [name, setName] = useState('');
   const [message, setMessage] = useState('');
+  const navigate = useNavigate();
 
   const handleSignUp = async () => {
     try {
@@ -15,14 +16,19 @@ const SignUpComponent = () => {
       });
       console.log('Sign up successful:', response.data);
       // Update message state with the success message from response
-      setMessage(response.data.http_status.message || '');
+      // setMessage(response.data.http_status.message || '');
+      navigate('/signin');
     } catch (error) {
       console.error('Sign up failed:', error);
-      // Update message state with the error message from response
-      setMessage(error.response.data.http_status.errors || 'Sign up failed');
+      if (error.response && error.response.data && error.response.data.http_status) {
+        // Update message state with the error message from response
+        setMessage(error.response.data.http_status.errors || 'Sign up failed');
+      } else {
+        // Handle other types of errors
+        setMessage('Sign up failed');
+      }
     }
   };
-
   return (
     <div className="sign-up-form">
       <h1 className="sign-up-title"> Welcome, please sign up or sign in to continue</h1>
