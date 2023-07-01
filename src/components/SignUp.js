@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
+import '../styles/signup.css';
 
 const SignUpComponent = () => {
   const [name, setName] = useState('');
@@ -19,7 +20,6 @@ const SignUpComponent = () => {
       // setMessage(response.data.http_status.message || '');
       navigate('/signin');
     } catch (error) {
-      console.error('Sign up failed:', error);
       if (error.response && error.response.data && error.response.data.http_status) {
         // Update message state with the error message from response
         setMessage(error.response.data.http_status.errors || 'Sign up failed');

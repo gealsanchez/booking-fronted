@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { getUserFromAPI, postUserToAPI } from '../redux/users';
+import '../styles/signin.css';
 // import global from '../assets/images/global.png';
 
 const Login = () => {
@@ -32,16 +33,13 @@ const Login = () => {
   }
 
   return (
-    <section className="content-login">
+    <section className="sign-in-form">
+      <h1 className="sign-in-title"> Welcome, please sign in to continue</h1>
       <form onSubmit={handleLoginClick}>
-        <div className="imgcontainer">
-          <img className="avatar" src={global} alt="Logo" />
-        </div>
-
-        <div className="container">
+        <div className="sign-in-inputs">
           <label htmlFor="name">
             <input
-              className="field"
+              className="name-input"
               type="text"
               placeholder="Enter Username"
               value={inputs.title}
@@ -55,11 +53,11 @@ const Login = () => {
           <section className="msg-section">
             <p className="error">{error}</p>
           </section>
-          <button className="lg-btn" type="submit" disabled={status === 'loading' && true}>
-            Now Login
+          <button className="sign-in-button" type="submit" disabled={status === 'loading' && true}>
+            Sign in
           </button>
           <button
-            className="reg-btn"
+            className="sign-out-button"
             type="button"
             onClick={handleRegisterClick}
             disabled={status === 'loading' && true}
