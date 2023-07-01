@@ -27,7 +27,6 @@ const Addautomobile = () => {
       // Update message state with the success message from response
       setMessage('Added automobile successfully' || '');
     } catch (error) {
-      console.error('Add automobile failed:', error);
       setMessage(error.message || '');
     }
   };
