@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import SideBar from './SideBar';
 import '../styles/main.css';
 import dots from '../assets/dots.png';
-import left from '../assets/arrow-left.png';
+import left from '../assets/arrow-left.jpg';
 import right from '../assets/arrow-right.png';
 import { fetchAutomobiles } from '../redux/automobiles';
 

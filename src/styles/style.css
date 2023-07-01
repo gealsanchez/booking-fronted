@@ -1,3 +1,5 @@
+/* Your existing styles */
+
 body {
   margin: 0;
   padding: 0;
@@ -106,11 +108,30 @@ body {
   font-weight: 600;
 }
 
+.sidebar-toggle-button {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: transparent;
+  color: black;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 600px) {
   .sidebar {
     position: relative;
-    width: 100vw;
-    height: 27rem;
+    width: 0;
+    height: 100vh;
+    overflow: hidden;
+    transition: width 0.3s ease-in-out;
+  }
+
+  .sidebar.open {
+    width: 170px;
   }
 
   .sidebar-list {

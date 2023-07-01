@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux'; //
 import { createAutomobile } from '../redux/automobiles';
 import '../styles/add-automobile.css';
 
 const Addautomobile = () => {
+  const history = useNavigate();
   const [model, setModel] = useState('');
   const [year, setYear] = useState('');
   const [location, setLocation] = useState('');
@@ -26,6 +27,7 @@ const Addautomobile = () => {
       console.log(response);
       // Update message state with the success message from response
       setMessage('Added automobile successfully' || '');
+      history('/main');
     } catch (error) {
       setMessage(error.message || '');
     }
