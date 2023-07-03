@@ -31,7 +31,7 @@ const SideBar = () => {
           <Link to="/automobiles/delete" className="link">DELETE AUTOMOBILE</Link>
         </li>
         <li className="sidebar-item">
-          <Link to="/tickets" className="link">RESERVE</Link>
+          <Link to="/tickets" className="link">Ticket</Link>
         </li>
       </ul>
       <button
