@@ -17,6 +17,7 @@ const Addautomobile = () => {
 
   const handleSubmit = async () => {
     try {
+      // eslint-disable-next-line no-unused-vars
       const response = await dispatch(createAutomobile({
         model,
         year,
@@ -24,7 +25,6 @@ const Addautomobile = () => {
         rate,
         photo,
       }));
-      console.log(response);
       // Update message state with the success message from response
       setMessage('Added automobile successfully' || '');
       history('/main');

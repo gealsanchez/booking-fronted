@@ -10,13 +10,12 @@ const SignUpComponent = () => {
 
   const handleSignUp = async () => {
     try {
+      // eslint-disable-next-line no-unused-vars
       const response = await axios.post('http://127.0.0.1:3000/api/v1/users', {
         user: {
           name,
         },
       });
-      console.log('Sign up successful:', response.data);
-      // Update message state with the success message from response
       // setMessage(response.data.http_status.message || '');
       navigate('/signin');
     } catch (error) {
