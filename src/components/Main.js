@@ -7,6 +7,7 @@ import dots from '../assets/dots.png';
 import left from '../assets/arrow-left.jpg';
 import right from '../assets/arrow-right.png';
 import { fetchAutomobiles } from '../redux/automobiles';
+import Header from './Header';
 
 const Main = () => {
   const automobiles = useSelector((state) => state.automobiles);
@@ -28,6 +29,7 @@ const Main = () => {
   };
   return (
     <div className="main-bar">
+      <Header />
       <SideBar />
       <div className="main">
         <h1 className="automobile-list-title">BROWSE AUTOMOBILES</h1>

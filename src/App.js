@@ -11,6 +11,7 @@ import { fetchTickets } from './redux/tickets';
 import Ticket from './components/Ticket';
 import SignIn from './components/SignIn';
 import SignUp from './components/SignUp';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
   const dispatch = useDispatch();
