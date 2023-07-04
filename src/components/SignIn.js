@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { getUserFromAPI, postUserToAPI } from '../redux/users';
 import '../styles/signin.css';
-// import global from '../assets/images/global.png';
 
 const Login = () => {
   const [inputs, setInputs] = useState({ name: '' });
@@ -27,7 +26,6 @@ const Login = () => {
     dispatch(postUserToAPI(inputs));
   };
 
-  // Redirect if user successfully logged in
   if (status === 'succeed') {
     setTimeout(() => history('/main'));
   }
