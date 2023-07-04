@@ -7,7 +7,6 @@ import Main from './components/Main';
 import Body from './components/Body';
 import AutomobileDetails from './pages/AutomobileDetails';
 import AddAutomobile from './components/AddAutomobile';
-import { fetchTickets } from './redux/tickets';
 import Ticket from './components/Ticket';
 import SignIn from './components/SignIn';
 import SignUp from './components/SignUp';
@@ -18,7 +17,6 @@ const App = () => {
 
   useEffect(() => {
     dispatch(fetchAutomobiles());
-    dispatch(fetchTickets());
   }, [dispatch]);
 
   return (

@@ -7,7 +7,7 @@
 }
 
 .automobile-data {
-  border: 2px solid lightgray;
+  border: none;
   border-radius: 10px;
 }
 
@@ -15,7 +15,7 @@
   width: 300px;
   height: 300px;
   border: 3px solid lightblue;
-  margin: 20px;
+  margin: 0;
 }
 
 .automobile-details-year,
