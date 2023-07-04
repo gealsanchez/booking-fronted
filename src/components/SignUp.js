@@ -11,7 +11,7 @@ const SignUpComponent = () => {
   const handleSignUp = async () => {
     try {
       // eslint-disable-next-line no-unused-vars
-      const response = await axios.post('http://127.0.0.1:3000/api/v1/users', {
+      const response = await axios.post('https://bookingapi-mstz.onrender.com/api/v1/users', {
         user: {
           name,
         },

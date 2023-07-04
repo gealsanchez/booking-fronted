@@ -14,7 +14,7 @@ export const postUserToAPI = createAsyncThunk(
   async (data, thunkAPI) => {
     try {
       const response = await axios.post(
-        'http://localhost:3000/api/v1/users',
+        'https://bookingapi-mstz.onrender.com/api/v1/users',
         data,
       );
       return response.data;
@@ -29,7 +29,7 @@ export const getUserFromAPI = createAsyncThunk(
   async (name, thunkAPI) => {
     try {
       const response = await axios.get(
-        `http://localhost:3000/api/v1/users/${name}`,
+        `https://bookingapi-mstz.onrender.com/api/v1/users/${name}`,
       );
       return response.data;
     } catch (error) {
