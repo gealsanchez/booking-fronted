@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { logout } from '../redux/users';
 
-function Header() {
+const Header = () => {
   const history = useNavigate();
   const dispatch = useDispatch();
   const handleLogout = () => {
@@ -38,6 +38,6 @@ function Header() {
       </Container>
     </Navbar>
   );
-}
+};
 
 export default Header;

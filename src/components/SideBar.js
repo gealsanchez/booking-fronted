@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-// import logo from '../images/logo.png';
 import { logout } from '../redux/users';
 import '../styles/style.css';
 
@@ -15,11 +14,6 @@ const SideBar = () => {
   return (
 
     <nav className="sidebar">
-      <div className="sidebar-header">
-        {/* <div className="sidebar-header-icon">
-        <img className="logo" src={logo} alt="Our logo" />
-      </div> */}
-      </div>
       <ul className="sidebar-list">
         <li className="sidebar-item">
           <Link to="/main" className="link">AUTOMOBILES</Link>
