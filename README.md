@@ -21,11 +21,10 @@
 
 # 📖 [BOOKING API] <a name="about-project"></a>
 
-**[Booking api]** is a front end app to book an automobile. The user can view the cars and their details and add more automobiles. It uses the back end which can be accessed [THROUGH THIS LINK](git@github.com:gealsanchez/booking_api.git)
+**[Booking api]** is a front end app to book an automobile. The user can view the cars and their details and add more automobiles. It uses the back end which can be accessed through the next link
 
-[Link to the back-end](git@github.com:gealsanchez/booking_api.git)
+Front-end deployed website: https://vocal-elf-856767.netlify.app
 
-Front-end deployed website: https://wondrous-beijinho-ac8d57.netlify.app/
 Back-end deployed API: https://bookingapi-mstz.onrender.com/api/v1/automobiles --- /users
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -48,7 +47,7 @@ Back-end deployed API: https://bookingapi-mstz.onrender.com/api/v1/automobiles -
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Front-end deployed website: [Live Demo](https://wondrous-beijinho-ac8d57.netlify.app/)
+- Front-end deployed website: [Live Demo](https://vocal-elf-856767.netlify.app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
