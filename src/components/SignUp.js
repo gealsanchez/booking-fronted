@@ -16,14 +16,11 @@ const SignUpComponent = () => {
           name,
         },
       });
-      // setMessage(response.data.http_status.message || '');
       navigate('/signin');
     } catch (error) {
       if (error.response && error.response.data && error.response.data.http_status) {
-        // Update message state with the error message from response
         setMessage(error.response.data.http_status.errors || 'Sign up failed');
       } else {
-        // Handle other types of errors
         setMessage('Sign up failed');
       }
     }

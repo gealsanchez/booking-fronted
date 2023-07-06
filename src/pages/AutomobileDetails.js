@@ -16,32 +16,32 @@ const AutomobileDetails = () => {
     <div className="automobile-details">
       <SideBar />
       <div className="automobile-details-container">
-        <img className="automobile-details-image" src={automobile.photo} alt="automobile" />
+        <img className="automobile-details-image rounded" src={automobile.photo} alt="automobile" />
         <table className="automobile-data">
           <tbody>
-            <tr className="automobile-details-name">
-              <td>automobile:</td>
+            <tr className="automobile-details-model">
+              <td>Automobile:</td>
               <td>{automobile.model}</td>
             </tr>
             <tr className="automobile-details-year gray-row">
-              <td>year:</td>
+              <td>Year:</td>
               <td>{automobile.year}</td>
             </tr>
             <tr className="automobile-details-location">
-              <td>Based in:</td>
+              <td>Location:</td>
               <td>{automobile.location}</td>
             </tr>
             <tr className="automobile-details-rate gray-row">
-              <td>Charging rate:</td>
+              <td>Fee:</td>
               <td>
                 $
                 {automobile.rate}
               </td>
             </tr>
-            <tr className="gray-row">
+            <tr className="row">
               <td>
                 <Link to={`/automobiles/${automobile.id}/reserve`}>
-                  <button type="button" className="automobile-details-button"> Reserve</button>
+                  <button type="button" className="automobile-details-button m-5"> Reserve</button>
                 </Link>
               </td>
             </tr>
