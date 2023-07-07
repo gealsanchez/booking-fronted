@@ -43,3 +43,18 @@
 .gray-row {
   background-color: #f4f4f4;
 }
+
+@media only screen and (max-width: 600px) {
+  .automobile-details-container {
+    display: flex;
+    flex-direction: column;
+    padding: 30%;
+    width: 200px;
+  }
+
+  .automobile-details-model {
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+
